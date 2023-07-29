@@ -16,7 +16,6 @@ import {
     figma,
     docker,
     meta,
-    starbucks,
     tesla,
     shopify,
     carrent,
@@ -29,6 +28,8 @@ import {
     ztp,
     cvpr,
     androidApp,
+    oocl,
+    preface,
   } from "../assets";
   
   export const navLinks = [
@@ -124,14 +125,15 @@ import {
     {
       title: "Software Engineer Intern (Infrastructure)",
       company_name: "OOCL",
-      icon: starbucks,
+      icon: oocl,
       iconBg: "#383E56",
       date: "June 2023 - August 2023",
+      website:"https://www.oocl.com/eng/aboutoocl/companyprofile/informationtechnology/Pages/default.aspx",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Developed an application, Zero Touch Provisioning, to allow user to search, reserve and apply new network switch to the Data Centers.",
+        "Research and implementation Cross-Tenant Synchronisation(multi-organisational cloud resources synchronisation. ",
+        "Maintain Microsoft Azure Cloud with various services, namely Azure Automation Books, Azure SQL Database .",
+        "Participating in Agile and providing constructive feedback to other developers, product managers in multiple teams.",
       ],
     },
     {
@@ -140,6 +142,7 @@ import {
       icon: beNovelty,
       iconBg: "#E6DEDD",
       date: "Jan 2021 - Feb 2022",
+      website:"https://www.benovelty.com/",
       points: [
         "Developing and maintaining web applications using React.js and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -150,9 +153,10 @@ import {
     {
       title: "Summer Intern (Curriculum Team)",
       company_name: "Preface Coding",
-      icon: shopify,
+      icon: preface,
       iconBg: "#383E56",
       date: "Jan 2022 - Jan 2023",
+      website:"https://www.preface.ai",
       points: [
         "Developing and maintaining web applications using React.js and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",

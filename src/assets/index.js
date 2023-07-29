@@ -23,9 +23,12 @@ import threejs from "./tech/threejs.svg";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
+
 import tesla from "./company/tesla.png";
 import beNovelty from "./company/beNovelty.png";
+import oocl from "./company/oocl.jpeg";
+import preface from "./company/preface.jpeg"
+
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -37,7 +40,8 @@ import machine_learning from "./machine_learning.png" ;
 import content_creation from "./content_creation.png";
 import ztp from "./ZTP.jpeg";
 import cvpr from "./CVPR.png";
-import androidApp from "./androidApp.png"
+import androidApp from "./androidApp.png";
+
 
 export {
   logo,
@@ -63,7 +67,6 @@ export {
   threejs,
   meta,
   shopify,
-  starbucks,
   tesla,
   carrent,
   jobit,
@@ -75,4 +78,6 @@ export {
   ztp,
   cvpr,
   androidApp,
+  oocl,
+  preface,
 };

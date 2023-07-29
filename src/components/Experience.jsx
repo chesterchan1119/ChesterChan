@@ -23,11 +23,17 @@ const ExperienceCard = ({ experience }) => {
       date={experience.date}
       iconStyle={{ background: experience.iconBg }}
       icon={
-        <div className='flex justify-center items-center w-full h-full'>
+        <div className='flex justify-center items-center w-full h-full' 
+        style={{ cursor: "pointer", filter: "brightness(1)", transition: "filter 0.3s" }}
+            onMouseOver={(e) => e.target.style.filter = "brightness(1.2)"}
+            onMouseOut={(e) => e.target.style.filter = "brightness(1)"}>
+          {/* <a href={experience.website} target='_blank' rel='noopener noreferrer'></a> */}
           <img
             src={experience.icon}
             alt={experience.company_name}
             className='w-[60%] h-[60%] object-contain'
+            onClick={() => window.open(experience.website, "_blank")}
+          
           />
         </div>
       }
