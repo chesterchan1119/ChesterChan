@@ -25,7 +25,7 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 
 import tesla from "./company/tesla.png";
-import beNovelty from "./company/beNovelty.png";
+import beNovelty from "./company/benovelty.png";
 import oocl from "./company/oocl.jpeg";
 import preface from "./company/preface.jpeg"
 

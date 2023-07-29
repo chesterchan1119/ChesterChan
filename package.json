@@ -9,6 +9,13 @@
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
+  "keywords": [
+    "example",
+    "heroku"
+  ],
+  "engines": {
+    "node": "19.x"
+  },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@react-three/drei": "^9.66.6",
