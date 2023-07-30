@@ -1,7 +1,5 @@
 import logo from "./logo.svg";
-import backend from "./backend.png";
-import creator from "./creator.png";
-import mobile from "./mobile.png";
+
 import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
@@ -21,17 +19,13 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
 
-import tesla from "./company/tesla.png";
+
+
 import beNovelty from "./company/benovelty.png";
 import oocl from "./company/oocl.jpeg";
 import preface from "./company/preface.jpeg"
 
-
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
 
 
 import chester_logo from "./chester_logo.png"; 
@@ -45,9 +39,6 @@ import androidApp from "./androidApp.png";
 
 export {
   logo,
-  backend,
-  creator,
-  mobile,
   web,
   github,
   menu,
@@ -65,11 +56,7 @@ export {
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  tesla,
-  carrent,
-  jobit,
+
   chester_logo,
   system_architecture,
   machine_learning,
