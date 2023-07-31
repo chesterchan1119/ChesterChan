@@ -13,8 +13,6 @@ import {
     git,
     figma,
     docker,
-   
-  
     threejs,
     system_architecture,
     machine_learning,
