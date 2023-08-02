@@ -2,7 +2,7 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
-const port = process.env.PORT || 8000
+
 export default defineConfig({
   plugins: [react()],
   build: {
@@ -16,9 +16,6 @@ export default defineConfig({
             }
         }
     }
-},
-    server: {
-      port: 3000 // change the port to 3000
-    }
+}
   
 })
