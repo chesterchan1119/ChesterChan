@@ -14,9 +14,7 @@
     "example",
     "heroku"
   ],
-  "engines": {
-    "node": "19.x"
-  },
+  
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@react-three/drei": "^9.66.6",
