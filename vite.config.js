@@ -18,7 +18,7 @@ export default defineConfig({
     }
 },
 server: {
-    port: 3006,
+    port: 3005,
     host: "0.0.0.0"
   }
   
