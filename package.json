@@ -47,6 +47,6 @@
     "tailwindcss": "^3.3.2",
     "vite": "^4.4.7"
   },
-  "heroku-postbuild": "npm run build",
+  "heroku-postbuild": "npm install --omit=dev && npm run build",
   "homepage": "https://chesterchan1119.github.io/" 
 }
