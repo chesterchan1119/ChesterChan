@@ -253,7 +253,7 @@ import {
         },
       ],
       image: androidApp,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/chesterchan1119/Inventory-Application-with-Android-Studio",
     },
   ];
   
