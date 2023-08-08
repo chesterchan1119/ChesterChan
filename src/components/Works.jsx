@@ -7,6 +7,7 @@ import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
+import { FaDownload } from "react-icons/fa"; // Import the download icon from react-icons library
 
 
 const ProjectCard = ({
@@ -68,11 +69,18 @@ const ProjectCard = ({
   );
 };
 
-
 const Works = () => {
+
+  const handleDownloadCV = () => {
+    const link = document.createElement('a');
+    link.href = "/Curriculum Vitae_Chan Cheuk Him.pdf";
+    link.download = "Curriculum Vitae_Chan Cheuk Him.pdf";
+    link.click();
+  };
+
   return (
     <>
-     <motion.div variants={textVariant()}>
+      <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} `}>My work</p>
         <h2 className={`${styles.sectionHeadText}`}>Projects</h2>
       </motion.div>
@@ -94,9 +102,17 @@ const Works = () => {
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
-
+      <br></br>
+      <br></br>
+      <div className='mt-5 flex justify-center'>
+        <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded flex items-center' onClick={handleDownloadCV}>
+        <FaDownload className='mr-2' /> Chan_Cheuk_Him_CV.pdf
+        </button>
+      </div>
     </>
   )
 }
+
+  
 
 export default SectionWrapper(Works, "");
