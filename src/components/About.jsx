@@ -29,14 +29,17 @@ const About = () => {
     <>
       <motion.div variants={textVariant()}>  
         <p className={styles.sectionSubText}>Introduction</p> 
-        <h2 className={styles.sectionHeadText}>Overview</h2> 
+        <h2 className={styles.sectionHeadText}>About Me</h2> 
 
       </motion.div>
 
       <motion.p variants={fadeIn("","",0.1,1 )} className={"mt-4 text-secondary text-[17px]"}> 
-      I am an aspiring Full-Stack Software Engineer with a passion to create with technology to make people's lives easier.
-      I design and build high-quality software applications under different systems and frameworks to solve complex technical issues. 
-      I never stop learning to be a more "Full-Stack" engineer with advanced technologies.
+      My main focus is to create with technology to make people's lives easier</motion.p>
+      <motion.p variants={fadeIn("","",0.1,1 )} className={"mt-4 text-secondary text-[17px]"}> 
+      I design and build high-quality software products to solve complex technical issues. 
+      </motion.p>
+      <motion.p variants={fadeIn("","",0.1,1 )} className={"mt-4 text-secondary text-[17px]"}> 
+      I learn every day, so my expertise shown here may not be in latest version.
       </motion.p>
 
 

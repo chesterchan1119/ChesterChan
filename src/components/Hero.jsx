@@ -14,7 +14,7 @@ const Hero = () => {
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>Chester Chan</h1>
           <h2 className="text-[#006699] text-3xl font-bold"> Full-Stack Software Engineer</h2>
-          <p className={'mt-2 text-white-100'}> I develop 3D-animated website, <br className="sm: block hidden"></br>deep learning models and Full-stack applications </p>
+          <p className={'mt-2 text-white-100'}> I build accessible, <br className="sm: block hidden"></br>inclusive products and digital experiences for the web.</p>
         </div> 
       </div>
       <ComputersCanvas /> 

@@ -42,7 +42,7 @@ import {
   
   const services = [
     {
-      title: "Full-Stack Development",
+      title: "Full-Stack Software Development",
       icon: web,
     },
     {
@@ -116,7 +116,7 @@ import {
   
   const experiences = [
     {
-      title: "Software Engineer Intern (Infrastructure)",
+      title: "Technical Analyst Intern (Infrastructure)",
       company_name: "OOCL",
       icon: oocl,
       iconBg: "#383E56",
