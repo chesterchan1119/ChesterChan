@@ -123,8 +123,8 @@ import {
       date: "June 2023 - August 2023",
       website:"https://www.oocl.com/eng/aboutoocl/companyprofile/informationtechnology/Pages/default.aspx",
       points: [
-        "Developed a Zero Touch Provisioning application, to allow clients and colleagues to search, reserve and apply new network switch to the Data Centers.",
-        "Researched and implemented Cross-Tenant Synchronisation (Cross-organisational on-premise and cloud resources synchronisation.",
+        "Developed a Zero Touch Provisioning application, to allow seniors to search, reserve and apply new network switch to Data Centers.",
+        "Researched and implemented Azure Cross-Tenant Synchronisation to phase out company's deprecated existing cross-organisational on-premise and cloud resources synchronisation.",
         "Developed 3 automation tools that streamlined infrastructure deployment processes using PowerShell scripting language",
         "Managed 5 Microsoft Azure Active Accounts, including setup and congifuration of Azure Active Directory, Automation Books, Azure SQL Database.",
         "Participated in Agile and provided constructive feedback to other developers, product managers in multiple teams.",
@@ -139,7 +139,7 @@ import {
       website:"https://www.benovelty.com/",
       points: [
         "Developed and maintained web API using NodeJs, ReactJs and other related technologies.",
-        "Built, tested and deployed high-quality aplications on AWS Cloud Ecosystem.",
+        "Built, tested and deployed high-quality applications on AWS Code Build.",
         "Created and Published OpenAPI-related tutorial contents via WordPress",
         "Conceived and deployed automated reports regarding the performance of the web which saved 48 hours of manual reporting each month.",
       ],

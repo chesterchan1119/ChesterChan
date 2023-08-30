@@ -5,7 +5,7 @@ import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../Loader";
 
 const Earth =  ({isMobile}) => {
-  const phone = useGLTF("./pp/scene.gltf");
+  const phone = useGLTF("./talking/scene.gltf");
  
 
   return (
@@ -13,7 +13,7 @@ const Earth =  ({isMobile}) => {
       <primitive 
         object={phone.scene} 
         scale={5} 
-        position-y={-4} 
+        position-y={-4.5} 
         rotation-y={0} 
       />
       <hemisphereLight intensity={0.15} groundColor ="black" />
