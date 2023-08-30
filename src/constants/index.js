@@ -207,7 +207,7 @@ import {
       
       ],
       image: ztp,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/chesterchan1119/ZeroTouchProvisioning",
     },
     {
       name: "Classification on Chest X-Ray with ResNet-18",
