@@ -34,12 +34,12 @@ const About = () => {
       </motion.div>
 
       <motion.p variants={fadeIn("","",0.1,1 )} className={"mt-4 text-secondary text-[17px]"}> 
-      My main focus is to create with technology to make people's lives easier</motion.p>
+      I create with technology to make lives easier.</motion.p>
       <motion.p variants={fadeIn("","",0.1,1 )} className={"mt-4 text-secondary text-[17px]"}> 
-      I design and build high-quality software products to solve complex technical issues. 
+      I design and build high-quality software products to solve complex issues. 
       </motion.p>
       <motion.p variants={fadeIn("","",0.1,1 )} className={"mt-4 text-secondary text-[17px]"}> 
-      I learn every day, so my expertise shown here may not be in latest version.
+      I learn every day. My expertise here is therefore not up-to-date.
       </motion.p>
 
 
