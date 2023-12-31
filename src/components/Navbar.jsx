@@ -56,7 +56,13 @@ const Navbar = () => {
               className={`${
                 active === nav.title ? "text-white" : "text-secondary"
               } hover:text-white text-[18px] font-medium cursor-pointer`}
-              onClick={() => setActive(nav.title)}
+              onClick={() => {
+                setToggle(!toggle);
+                setActive(nav.title);
+                if (nav.id === "resume") {
+                  window.scrollTo(0, 4600);
+                }
+              }}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>

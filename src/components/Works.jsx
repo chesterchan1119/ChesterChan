@@ -26,7 +26,7 @@ const ProjectCard = ({
           scale: 1,
           speed: 450,
         }}
-        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
+        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full border-white border-2'
       >
         <div className='relative w-full h-[230px]'>
           <img
@@ -89,11 +89,8 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
-          Following projects showcases my skills and experience through
-          real-world examples of my work. Each project is briefly described with
-          links to code repositories and live demos in it. It reflects my
-          ability to solve complex problems, work with different technologies,
-          and manage projects effectively.
+          The following projects demonstrate my expertise with practical examples of some of my work. Each project is briefly described with
+          links to code repositories and live demos in it.  They showcase my ability to tackle intricate challenges, adapt to various technologies, and efficiently oversee projects.
         </motion.p>
       </div>
       <div className='mt-20 flex flex-wrap gap-7'>
@@ -105,8 +102,8 @@ const Works = () => {
       <br></br>
       <br></br>
       <div className='mt-5 flex justify-center'>
-        <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded flex items-center' onClick={handleDownloadCV}>
-        <FaDownload className='mr-2' /> Chan_Cheuk_Him_CV.pdf
+        <button className='bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded flex items-center' onClick={handleDownloadCV}>
+        <FaDownload className='mr-2' /> Download my Resume.PDF
         </button>
       </div>
     </>
@@ -115,4 +112,4 @@ const Works = () => {
 
   
 
-export default SectionWrapper(Works, "");
+export default SectionWrapper(Works, "projects");
