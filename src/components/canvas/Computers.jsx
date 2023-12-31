@@ -31,7 +31,7 @@ const DesktopComputers = () => {
 };
 
 const MobileComputers = () => {
-  const computer = useGLTF('./plain_box/plainBox.gltf');
+  const computer = useGLTF('./cv_Qrcode/bl_cvQrcode1.gltf');
 
   return (
     <mesh>
