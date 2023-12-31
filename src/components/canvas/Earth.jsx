@@ -5,17 +5,15 @@ import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../Loader";
 
 const Earth =  ({isMobile}) => {
-  const phone = useGLTF("./talking/scene.gltf");
- 
+  const modelPath = isMobile ? "./resume/resume2023_31Dec.gltf" : "./talking/scene.gltf";
+  const model = useGLTF(modelPath);
+  const scale = isMobile ? 2 : 5;
+  const positionY = isMobile ? 1 : -4.5;
 
   return (
     <mesh>
-      <primitive 
-        object={phone.scene} 
-        scale={5} 
-        position-y={-4.5} 
-        rotation-y={0} 
-      />
+      <primitive object={model.scene} scale={[scale, scale, scale]} position-y={positionY} rotation-y={0} />
+
       <hemisphereLight intensity={0.15} groundColor ="black" />
       <pointLight intensity={1}/> 
       <spotLight 
@@ -33,25 +31,33 @@ const Earth =  ({isMobile}) => {
 
 const EarthCanvas = () => {
   const [isMobile, setIsMobile] = useState(false) ;
+  const cameraPosition = isMobile ? [-10, 4, 32] : [-10, 4, 15];
   useEffect(() => {
-      //add a listener for changes to the screen size 
-      const mediaQuery = window.matchMedia('(max-width: 400px)');  //check whether we are on a mobile device 
-      
-      // set the initial value of the 'isMobile' state
-      setIsMobile(mediaQuery.matches) ; 
-
-     // Define a callback function to handle changes to the media query
-      const handleMediaQueryChange = (event) => { 
-        setIsMobile(event.matches); 
-      }
-
-      // add the callback function as a listener for changes to the media query 
-      mediaQuery.addEventListener('change' , handleMediaQueryChange);
-
-      return () => {
-        mediaQuery.removeEventListener('change' , handleMediaQueryChange); 
-      }
-    }, [])
+    const checkOrientation = () => {
+      const isMobileDevice = window.matchMedia('(max-width: 500px)').matches;
+      const isHorizontal = Math.abs(window.orientation) === 90;
+  
+      setIsMobile(isMobileDevice || isHorizontal);
+    };
+  
+    const handleMediaQueryChange = (event) => {
+      checkOrientation();
+    };
+  
+    const handleOrientationChange = () => {
+      checkOrientation();
+    };
+  
+    window.addEventListener('resize', handleMediaQueryChange);
+    window.addEventListener('orientationchange', handleOrientationChange);
+  
+    checkOrientation();
+  
+    return () => {
+      window.removeEventListener('resize', handleMediaQueryChange);
+      window.removeEventListener('orientationchange', handleOrientationChange);
+    };
+  }, []);
   return (
     <Canvas
       frameloop='demand'
@@ -62,7 +68,7 @@ const EarthCanvas = () => {
         fov: 30,
         near: 0.1,
         far: 200,
-        position: [-10, 4, 15],
+        position: cameraPosition,
       }}
     >
       <Suspense fallback={<CanvasLoader />}>

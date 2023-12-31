@@ -32,6 +32,7 @@ const DesktopComputers = () => {
 
 const MobileComputers = () => {
   const computer = useGLTF('./cv_Qrcode/bl_cvQrcode1.gltf');
+  // const computer = useGLTF("./resume/resume2023_31Dec.gltf");
 
   return (
     <mesh>
@@ -60,22 +61,29 @@ const ComputersCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    // Add a listener for changes to the screen size
-    const mediaQuery = window.matchMedia('(max-width: 500px)');
-
-    // Set the initial value of the 'isMobile' state
-    setIsMobile(mediaQuery.matches);
-
-    // Define a callback function to handle changes to the media query
-    const handleMediaQueryChange = (event) => {
-      setIsMobile(event.matches);
+    const checkOrientation = () => {
+      const isMobileDevice = window.matchMedia('(max-width: 500px)').matches;
+      const isHorizontal = Math.abs(window.orientation) === 90;
+  
+      setIsMobile(isMobileDevice || isHorizontal);
     };
-
-    // Add the callback function as a listener for changes to the media query
-    mediaQuery.addEventListener('change', handleMediaQueryChange);
-
+  
+    const handleMediaQueryChange = (event) => {
+      checkOrientation();
+    };
+  
+    const handleOrientationChange = () => {
+      checkOrientation();
+    };
+  
+    window.addEventListener('resize', handleMediaQueryChange);
+    window.addEventListener('orientationchange', handleOrientationChange);
+  
+    checkOrientation();
+  
     return () => {
-      mediaQuery.removeEventListener('change', handleMediaQueryChange);
+      window.removeEventListener('resize', handleMediaQueryChange);
+      window.removeEventListener('orientationchange', handleOrientationChange);
     };
   }, []);
 
