@@ -17,8 +17,12 @@ http://chancheukhim.space
 ## Contact
 <img width="1031" alt="image" src="https://github.com/chesterchan1119/ChesterChan/assets/110362704/7b3d589e-dbd5-430e-89e5-96aa7ad47bf2">
 
+<br>
+<br>
+<br>
+
 ## File Structure
-'''
+```
 CHESTERCHANPERSONALWEBSITE/
 ├── .github/
 ├── dist/
@@ -46,4 +50,4 @@ CHESTERCHANPERSONALWEBSITE/
 ├── README.md
 ├── tailwind.config.js
 └── vite.config.js
-'''
+```
