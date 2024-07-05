@@ -5,10 +5,12 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
-import { projects } from "../constants";
+import { projects ,otherLinks} from "../constants";
+
 import { fadeIn, textVariant } from "../utils/motion";
 import { FaDownload } from "react-icons/fa"; // Import the download icon from react-icons library
-
+import Button from '@mui/material/Button';
+import Stack from '@mui/material/Stack';
 
 const ProjectCard = ({
   index,
@@ -102,9 +104,18 @@ const Works = () => {
       <br></br>
       <br></br>
       <div className='mt-5 flex justify-center'>
-        <button className='bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded flex items-center' onClick={handleDownloadCV}>
+      <Stack direction="row" spacing={2}>
+        
+      <Button variant="outlined" onClick={()=>window.open( otherLinks.find(link => link.name === "myGitHubRepo").link, "_blank")}>
+        See All
+      </Button>
+      <Button variant="outlined" color = "success" onClick={handleDownloadCV}>
         <FaDownload className='mr-2' /> Download my Resume.PDF
-        </button>
+        </Button>
+     
+    </Stack>
+
+      
       </div>
     </>
   )

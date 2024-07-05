@@ -259,4 +259,11 @@ import {
     },
   ];
   
-  export { services, technologies, experiences, projects };
+  const otherLinks = [
+    {  
+      name: "myGitHubRepo",
+      link: "https://github.com/chesterchan1119?tab=repositories"
+    }
+  ]
+  
+  export { services, technologies, experiences, projects, otherLinks };
