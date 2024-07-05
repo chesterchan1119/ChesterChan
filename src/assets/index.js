@@ -25,6 +25,11 @@ import threejs from "./tech/threejs.svg";
 import beNovelty from "./company/benovelty.png";
 import oocl from "./company/oocl.jpeg";
 import preface from "./company/preface.jpeg"
+import forbole from "./company/forbole.png"
+
+
+import HKBU from "./education/HKBU.jpeg"
+import UAM from "./education/UAM.png"
 
 
 
@@ -67,4 +72,7 @@ export {
   androidApp,
   oocl,
   preface,
+  forbole,
+  HKBU,
+  UAM,
 };

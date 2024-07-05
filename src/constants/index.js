@@ -23,6 +23,7 @@ import {
     androidApp,
     oocl,
     preface,
+    forbole,
   } from "../assets";
   
   export const navLinks = [
@@ -37,6 +38,10 @@ import {
     {
       id: "projects",
       title: "Projects",
+    },
+    {
+      id: "educations",
+      title: "Educations",
     },
     {
       id: "resume",
@@ -125,17 +130,30 @@ import {
   
   const experiences = [
     {
-      title: "Technical Analyst Intern (Infrastructure)",
+      title: "Software Engineer (Part-time)",
+      company_name: "Forbole Group",
+      icon: forbole,
+      iconBg: "#383E56",
+      date: "January 2024 - April 2024",
+      website:"https://www.forbole.com/zh-HK/about",
+      points: [
+        "Designed, implemented and tested 30+ blockchains and related decentralized applications",
+        "Managed and provisioned high performing and robust institutional-grade system",
+        "Deployed new blockchain validator nodes and applications"
+      ]
+    },
+    {
+      title: "Technical Analyst Intern (DevOps Team)",
       company_name: "OOCL",
       icon: oocl,
       iconBg: "#383E56",
       date: "June 2023 - August 2023",
       website:"https://www.oocl.com/eng/aboutoocl/companyprofile/informationtechnology/Pages/default.aspx",
       points: [
-        "Developed a Zero Touch Provisioning application, to allow seniors to search, reserve and apply new network switch to Data Centers.",
-        "Researched and implemented Azure Cross-Tenant Synchronisation to phase out company's deprecated existing cross-organisational on-premise and cloud resources synchronisation.",
+        "Developed a Zero-Touch Provisioning software (Full Stack Internal Web Application), to enable automation on remote deployment of network switches in data centers",
+        "Researched and implemented new solutions with Microsoft Azure Cross-Tenant Synchronization (Cross- organizational on-premises and cloud resources synchronization) between the headquarter and subsidiary companies",
         "Developed 3 automation tools that streamlined infrastructure deployment processes using PowerShell scripting language",
-        "Managed 5 Microsoft Azure Active Accounts, including setup and congifuration of Azure Active Directory, Automation Books, Azure SQL Database.",
+        "Managed Microsoft Azure Active Directory, including setup and congifuration of Azure AD, Automation Books, Azure SQL Database.",
         "Participated in Agile and provided constructive feedback to other developers, product managers in multiple teams.",
       ],
     },
@@ -148,7 +166,7 @@ import {
       website:"https://www.benovelty.com/",
       points: [
         "Developed and maintained web API using NodeJs, ReactJs and other related technologies.",
-        "Built, tested and deployed high-quality applications on AWS Code Build.",
+        "Built, tested and deployed high-quality applications on AWS CodeBuild.",
         "Created and Published OpenAPI-related tutorial contents via WordPress",
         "Conceived and deployed automated reports regarding the performance of the web which saved 48 hours of manual reporting each month.",
       ],
@@ -161,45 +179,20 @@ import {
       date: "June 2021 - August 2021",
       website:"https://www.preface.ai",
       points: [
-        "Built and Deployed a 3D Unity First-Person Game and Inventory Web application for educational use.",
-        "Collaborating with cross-functional teams including designers, business analyst, product managers, and other developers to produce on-demand App product. ",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Developed and deployed a 3D Unity-based first-person game and a web-based inventory management application for educational purposes.",
+        "Collaborated with cross-functional teams including designers, business analyst, product managers, and other developers to produce on-demand App product. ",
+        "Participated in code reviews and providing constructive feedback to other developers and coding instructors.",
       ],
     },
   ];
   
-  const testimonials = [
-    {
-      testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
-    },
-  ];
+ 
   
   const projects = [
     {
       name: "Zero Touching Provisioning",
       description:
-        "Web-based platform that allows users to search, reserve, and apply new network access switch on the a company architecture, providing a convenient and efficient solution for network installation needs.",
+        "Web-based platform that allows users to search, reserve, and apply new network access switch on a company architecture, providing a convenient and efficient solution for swift network installation needs.",
       tags: [
         {
           name: "python",
@@ -266,4 +259,4 @@ import {
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, technologies, experiences, projects };

@@ -19,7 +19,7 @@ const ProjectCard = ({
   source_code_link,
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}  whileHover={{ cursor: 'pointer' }}>
       <Tilt
         options={{
           max: 45,
@@ -81,7 +81,7 @@ const Works = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} `}>My work</p>
+        <p className={`${styles.sectionSubText} `}>Some Works I’ve Built</p>
         <h2 className={`${styles.sectionHeadText}`}>Projects</h2>
       </motion.div>
       <div className='w-full flex'>

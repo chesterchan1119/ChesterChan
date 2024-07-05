@@ -54,7 +54,7 @@ const Navbar = () => {
             <li
               key={nav.id}
               className={`${
-                active === nav.title ? "text-white" : "text-secondary"
+                active === nav.title ? "text-white" : (scrolled ? "text-secondary" : "text-black")
               } hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={() => {
                 setToggle(!toggle);
@@ -87,8 +87,9 @@ const Navbar = () => {
                 <li
                   key={nav.id}
                   className={`font-poppins font-medium cursor-pointer text-[16px] ${
-                    active === nav.title ? "text-white" : "text-secondary"
-                  }`}
+                    active === nav.title ? "text-white" : "text-secondary"}
+                    
+                  } `}
                   onClick={() => {
                     setToggle(!toggle);
                     setActive(nav.title);
